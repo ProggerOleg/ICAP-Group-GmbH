@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import SingleProject from "./pages/SingleProject";
 import Layout from "./components/Layout";
+
 function App() {
   return (
     <>
@@ -10,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="project" element={<SingleProject />} />
+            <Route path="project/:id" element={<SingleProject />} />
           </Route>
         </Routes>
       </BrowserRouter>

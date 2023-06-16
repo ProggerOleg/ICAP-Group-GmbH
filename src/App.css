@@ -22,6 +22,9 @@ a {
   display: inline-block;
   color: black;
 }
+a:hover{
+  color: black;
+}
 .gap-10{
   gap:10px;
 }
@@ -74,23 +77,25 @@ header{
 }
 .first_block{
   border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     padding: 30px;
 }
 .main-banner img{
-  filter: brightness(75%);
+  filter: brightness(50%);
+  border-radius: 25px;
 }
 .main-banner-content{
   top: 8%;
-  left:60px;
+  left:5%;
 }
 .main-banner-content h3{
   font-weight: 600;
   font-size: 22px;
+  color: #5d5dd5 !important;
 }
 .main-banner-content h4{
   font-weight: 600;
-  font-size: 48px;
+  font-size: 46px;
 }
 .points{
   font-size: 20px;
@@ -106,8 +111,143 @@ header{
   width: 300px;
   margin: 0 auto;
 }
+.second_block{
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    padding: 30px;
+    font-weight: 600;
+    color: #5d5dd5;
+}
+.second_block blockquote p{
+  font-size: 30px;
+}
+.bloquote{
+  right: 15%;
+  bottom: 10px;
+  
+}
+.bloquote2{
+  left: 15%;
+  top: 0px;
+  transform: rotate(180deg);
+}
+.card_block .col-6{
+  margin-bottom: 20px;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card_image{
+  aspect-ratio: 3/2;
+}
+.card-text{
+  font-size: 14px;
+}
+
 /* Home Page Ends Here */
 
 
+/* Single Project */
 
+.main-product-image {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main-product-details{
+  border-radius: 10px;
+}
+.main-product-details h3{
+  color: #5d5dd5;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.main-product-details h4{
+  font-size: 20px;
+}
+/* Single Project Page Ends Here */
 
+/* btns */
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+/* Second button */
+
+.button2 {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+ }
+ 
+ .button2  > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .button2 :hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ .button2 :hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }

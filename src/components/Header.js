@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/Logo.png";
 import { LuLogIn } from "react-icons/lu";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row d-flex align-items-center">
             <div className="col-3">
-              <img src={logo} className="w-75" alt="" />
+              <Link to="/">
+                <img src={logo} className="w-75" alt="" />
+              </Link>
             </div>
             <div className="col-5 ps-1">
               <ul className="nav-items d-flex align-items-center justify-content-around mb-0 ">
